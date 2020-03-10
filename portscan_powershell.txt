@@ -1,0 +1,13 @@
+---------------------------------
+1) PowerShell: simple port scanner:
+---------------------------------
+1..1024 | % {echo ((new-object Net.Sockets.TcpClient).Connect("172.16.0.100",$_)) "Port $_ is open!"} 2>$null
+--------------------------------
+2) PowerShell: Test-Netconnection -> single port scan on a given reange:
+---------------------------------
+foreach ($ip in 1..20) {Test-NetConnection -Port 80 -InformationLevel "Detailed" 172.16.0.$ip} 
+---------------------------------
+3) Powershell: combining IP and port ranges:
+---------------------------------
+1..20 | % { $a = $_; 1..1024 | % {echo ((new-object Net.Sockets.TcpClient).Connect("172.16.0.$a",$_)) "Port $_ is open!"} 2>$null} 
+---------------------------------
