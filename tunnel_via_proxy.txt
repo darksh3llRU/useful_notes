@@ -1,0 +1,3 @@
+works with bluecoat:
+socat -v tcp-listen:8000,reuseaddr,fork proxy:bcproxy.lux.pbk:IPADDR:8443,proxyport=8080,proxyauth=user:pass
+
