@@ -1,0 +1,18 @@
+RDE - Restricted Desktop Environment
+-------------------------------------
+1) commands like ipconfig, netstat and others are blocked
+Use sysinternals!
+https://docs.microsoft.com/en-us/sysinternals/downloads/
+-------------------------------------
+-------------------------------------
+2) Ways to download files via restricted corporate proxy(works with bluecoat)
+- rename zip to txt on your server, try to download this txt, sometimes it works
+- use base64 encoding for payloads/binaries/whatever delivery
+  cat pwn.exe | base64 > pwn.txt
+  download it to RDE 
+  certutil -decode pwn.txt pwn.exe
+-------------------------------------
+-------------------------------------
+3) 
+-------------------------------------
+-------------------------------------
