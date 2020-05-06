@@ -38,13 +38,25 @@ file:///c:/
 -------------------------------------
 InitialProgram=cmd.exe
 -------------------------------------
-7) 
+7) Powershell without powershell.exe
+https://github.com/p3nt4/PowerShdll/raw/master/dll/bin/x64/Release/PowerShdll.dll
+rundll32.exe PowerShdll.dll,main
+
+get-executionpolicy
+set-executionpolicy -scope currentuser unrestricted
 -------------------------------------
 -------------------------------------
-8) 
+8) bat2cmd
+@echo off
+:start
+SET /P com=
+%com%
+pause
+goto :start
 -------------------------------------
 -------------------------------------
-9)
+9) Any shotcurt on the desktop
+Click open file location
 -------------------------------------
 -------------------------------------
 10) 
