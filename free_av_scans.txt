@@ -1,0 +1,15 @@
+No distribution AV scans:
+- https://avcheck.net/
+- http://nodistribute.com/ 
+- https://dyncheck.com/
+- https://antiscan.me/ 
+- https://avbox.info/ 
+- https://kleenscan.com/
+
+Do not upload files with payloads on these sites:
+- novirusthanks.org
+- virustotal.com
+- virusscan.jotti.org
+- virscan.org
+- metascan-online.com
+- www.virusimune.com.br
