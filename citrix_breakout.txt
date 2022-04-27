@@ -29,6 +29,7 @@ End Sub
 4) Interactive CMD pause
 -------------------------------------
 cmd.exe /K pause
+//works as shortcut too
 -------------------------------------
 5) Web-browsers
 -------------------------------------
